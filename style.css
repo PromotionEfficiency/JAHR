@@ -1,0 +1,115 @@
+@font-face {
+    font-family: jahr;
+    src: url(assets/fonts/SST\ ARABIC\ LIGHT.TTF);
+}
+
+:root {
+    --main-color: #173830;
+    --secondary-color: #aaa9a9;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: jahr;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+header {
+    background-color: #00241B;
+}
+
+div#social {
+    width: 189px;
+}
+
+a.btn.btn-light.pt-1.pb-2.px-3.fw-bold {
+    font-size: 20px;
+}
+
+section#hero {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom, #00241bec, #173830ef), url(assets/img/main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.secondary-color {
+    color: var(--secondary-color);
+}
+
+section#aboutus {
+    height: 90vh;
+    background-image: url(assets/img/background.png);
+}
+
+.icon {
+    width: 65px;
+}
+
+.box {
+    background-color: #00241B;
+    height: 90%;
+    border-radius: 7px;
+}
+
+input.form-control {
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #aaa9a9;
+    border-radius: 0;
+}
+
+input.form-control:focus {
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #aaa9a9;
+    border-radius: 0;
+    outline: none;
+}
+
+textarea#exampleFormControlTextarea1 {
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #aaa9a9;
+    border-radius: 0;
+}
+
+textarea#exampleFormControlTextarea1:focus {
+    background: transparent;
+    border-bottom: #aaa9a9 solid 2px;
+    border-radius: 0;
+}
+
+footer {
+    background-color: #00241B;
+    height: 450px;
+}
+
+footer img {
+    width: 200px;
+}
+
+footer #copyright {
+    background-color: #010F0B;
+}
+
+i.fab,
+i.fas.fa-map-marker-alt {
+    background: var(--main-color);
+    font-size: 22px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+/* @media screen and (max-width: 1200px) {
+    .box {
+        height: 70%;
+    }
+} */
