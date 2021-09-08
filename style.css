@@ -107,9 +107,6 @@ i.fas.fa-map-marker-alt {
     border-radius: 5px;
 }
 
-
-/* @media screen and (max-width: 1200px) {
-    .box {
-        height: 70%;
-    }
-} */
+a {
+    text-decoration: none;
+}
