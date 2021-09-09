@@ -16,7 +16,7 @@
 
 <body>
 
-    <header class="">
+    <header>
         <nav class="container navbar navbar-expand-md navbar-light">
 
             <div class="container-fluid">
@@ -50,7 +50,7 @@
                     <img src="assets/img/logo.png" alt="">
                 </div>
                 <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <i class="fas fa-bars"></i>
                 </button>
             </div>
         </nav>
@@ -61,7 +61,7 @@
 
 
     <section id="hero" class="d-flex justify-content-center align-items-center">
-        <div class="container">
+        <div class="container heroanimation">
             <div class="text-center">
                 <h1 class="display-1 fw-bold text-white">ليعلم الجميع</h1>
                 <p class="secondary-color py-4 text-center fs-2 lh-base">لأن قصتك تستحق أن تروى، نساعدك في عملية الانتشار<br> المدروسة، لتسير بخطوات ثابتة</p>
@@ -75,7 +75,7 @@
 
 
     <section id="aboutus" class="d-flex flex-column justify-content-center align-items-center">
-        <div class="container text-center">
+        <div class="container text-center aboutusanimation">
 
             <div id="title" class="text-center">
                 <h1 class="fw-bold text-white border-bottom border-4 pb-4 d-inline-block display-4">من نحن</h1>
@@ -111,7 +111,7 @@
                 <div class="col-md-4 col-sm-12">
                     <div class="box d-flex flex-column justify-content-center align-items-center mx-2 mx-lg-5 py-5">
                         <img src="assets/img/icons/box2.png" class="icon" alt="">
-                        <h4 class="text-white py-3">استراتيجيات العلامات التجارية</h4>
+                        <h4 class="text-white py-3 px-1 text-center">استراتيجيات العلامات التجارية</h4>
                         <p class="px-5 secondary-color text-center px-1 fs-6">في هذه الخدمة نقوم باعداد الخطط طويلة المدى لتحقيق سلسلة من الأهداف الاستراتيجية التي تؤدي في النهاية إلى تعريف علامتك التجارية في المكان المستهدف من قبل المستهلكين.</p>
                     </div>
                 </div>
@@ -162,26 +162,27 @@
             <h1 class="fw-bold text-white border-bottom border-4 pb-4 d-inline-block display-4">تواصل معنا</h1>
         </div>
 
-        <form class="text-center pt-4">
+        <form action="https://formsubmit.co/Info@jahr.sa" method="POST" class="text-center pt-4">
 
             <div class="mb-3">
-                <input type="text" class="form-control text-end" placeholder="الأسم كامل">
+                <input type="text" name="name" class="form-control text-end" placeholder="الأسم كامل" required>
             </div>
 
             <div class="row">
                 <div class="mb-3 col pt-3">
-                    <input type="text" class="form-control col-12 col-md-6 text-end" placeholder="الهاتف">
+                    <input type="text" name="phone" class="form-control col-12 col-md-6 text-end" placeholder="الهاتف">
                 </div>
 
                 <div class="mb-3 col pt-3">
-                    <input type="email" class="form-control col-12 col-md-6 text-end" placeholder="البريد الإلكتروني">
+                    <input type="email" name="email" class="form-control col-12 col-md-6 text-end" placeholder="البريد الإلكتروني" required>
                 </div>
 
             </div>
 
             <div class="mb-3 col pt-3">
-                <textarea class="form-control text-end" id="exampleFormControlTextarea1" placeholder="الرسالة" rows="3"></textarea>
+                <textarea class="form-control text-end" name="message" id="exampleFormControlTextarea1" placeholder="الرسالة" rows="3"></textarea>
             </div>
+            <input type="hidden" name="_captcha" value="false">
 
             <button type="submit" class="btn btn-light mt-4 px-4 fw-bold">إرسال</button>
         </form>
@@ -214,7 +215,16 @@
 
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
 
+    <script>
+        gsap.from('.heroanimation', {
+            opacity: 0,
+            duration: 1.2,
+            y: -70,
+        })
+    </script>
 </body>
 
 </html>
