@@ -1,126 +1,131 @@
 @font-face {
-    font-family: jahr;
-    src: url(assets/fonts/SST\ ARABIC\ LIGHT.TTF);
+  font-family: jahr;
+  src: url(assets/fonts/SST\ ARABIC\ LIGHT.TTF);
 }
 
 :root {
-    --main-color: #173830;
-    --secondary-color: #aaa9a9;
+  --main-color: #173830;
+  --secondary-color: #aaa9a9;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: jahr;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: jahr;
 }
 
 body {
-    background-color: var(--main-color);
+  background-color: var(--main-color);
 }
 
 header {
-    background-color: #00241B;
+  background-color: #00241b;
 }
 
 div#social {
-    width: 189px;
+  width: 189px;
 }
 
 a.btn.btn-light.pt-1.pb-2.px-3.fw-bold {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 section#hero {
-    height: 95vh;
-    background-image: linear-gradient(to right bottom, #00241bec, #173830ef), url(assets/img/main.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, #00241bec, #173830ef),
+    url(assets/img/main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .secondary-color {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 section#aboutus {
-    height: 90vh;
-    background-image: url(assets/img/background.png);
+  height: 90vh;
+  background-image: url(assets/img/background.png);
 }
 
 .icon {
-    width: 65px;
+  width: 65px;
 }
 
 .box {
-    background-color: #00241B;
-    height: 90%;
-    border-radius: 7px;
+  background-color: #00241b;
+  height: 90%;
+  border-radius: 7px;
 }
 
 input.form-control {
-    background: transparent;
-    border: 0;
-    border-bottom: 2px solid #aaa9a9;
-    border-radius: 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #aaa9a9;
+  border-radius: 0;
 }
 
 input.form-control::placeholder {
-    color: white;
+  color: white;
 }
 
 input.form-control:focus {
-    background: transparent;
-    border: 0;
-    border-bottom: 2px solid #aaa9a9;
-    border-radius: 0;
-    outline: none;
-    box-shadow: 0 0 0 0.25rem rgb(140 141 144 / 25%)
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #aaa9a9;
+  border-radius: 0;
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgb(140 141 144 / 25%);
 }
 
 textarea#exampleFormControlTextarea1 {
-    background: transparent;
-    border: 0;
-    border-bottom: 2px solid #aaa9a9;
-    border-radius: 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #aaa9a9;
+  border-radius: 0;
 }
 
 textarea#exampleFormControlTextarea1::placeholder {
-    color: white;
+  color: white;
 }
 
 textarea#exampleFormControlTextarea1:focus {
-    background: transparent;
-    border-bottom: #aaa9a9 solid 2px;
-    border-radius: 0;
-    box-shadow: 0 0 0 0.25rem rgb(140 141 144 / 25%)
+  background: transparent;
+  border-bottom: #aaa9a9 solid 2px;
+  border-radius: 0;
+  box-shadow: 0 0 0 0.25rem rgb(140 141 144 / 25%);
+}
+
+.form-control {
+  color: #ffffff;
 }
 
 footer {
-    background-color: #00241B;
-    height: 450px;
+  background-color: #00241b;
+  height: 450px;
 }
 
 footer img {
-    width: 200px;
+  width: 200px;
 }
 
 footer #copyright {
-    background-color: #010F0B;
+  background-color: #010f0b;
 }
 
 i.fab,
 i.fas.fa-map-marker-alt {
-    background: var(--main-color);
-    font-size: 22px;
-    padding: 8px;
-    border-radius: 5px;
+  background: var(--main-color);
+  font-size: 22px;
+  padding: 8px;
+  border-radius: 5px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 i.fas.fa-bars {
-    font-size: 25px;
+  font-size: 25px;
 }
