@@ -129,3 +129,9 @@ a {
 i.fas.fa-bars {
   font-size: 25px;
 }
+
+button.btn1 {
+  background-color: #173830;
+  border-bottom: oldlace;
+  border-style: hidden;
+}
