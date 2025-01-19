@@ -50,14 +50,32 @@ export default function ContactFooter() {
                         </div>
 
                         <div className="flex gap-4 pt-4">
-                            <a href="https://www.snapchat.com/add/jahrksa" className="bg-white/10 text-white rounded-xl w-10 h-10 flex items-center justify-center hover:bg-white/20 transition-colors" target="_blank" rel="noopener">
-                                <Ghost className="text-xl" />
+                            <a 
+                                href="https://www.snapchat.com/add/jahrksa" 
+                                className="bg-white/10 text-white rounded-xl w-10 h-10 flex items-center justify-center hover:bg-white/20 transition-colors" 
+                                target="_blank" 
+                                rel="noopener"
+                                aria-label="Follow us on Snapchat"
+                            >
+                                <Ghost className="text-xl" aria-hidden="true" />
                             </a>
-                            <a href="https://twitter.com/JahrKSA" className="bg-white/10 text-white rounded-xl w-10 h-10 flex items-center justify-center hover:bg-white/20 transition-colors" target="_blank" rel="noopener">
-                                <Twitter className="text-xl" />
+                            <a 
+                                href="https://twitter.com/JahrKSA" 
+                                className="bg-white/10 text-white rounded-xl w-10 h-10 flex items-center justify-center hover:bg-white/20 transition-colors" 
+                                target="_blank" 
+                                rel="noopener"
+                                aria-label="Follow us on Twitter"
+                            >
+                                <Twitter className="text-xl" aria-hidden="true" />
                             </a>
-                            <a href="https://www.instagram.com/jahrksa/" className="bg-white/10 text-white rounded-xl w-10 h-10 flex items-center justify-center hover:bg-white/20 transition-colors" target="_blank" rel="noopener">
-                                <Instagram className="text-xl" />
+                            <a 
+                                href="https://www.instagram.com/jahrksa/" 
+                                className="bg-white/10 text-white rounded-xl w-10 h-10 flex items-center justify-center hover:bg-white/20 transition-colors" 
+                                target="_blank" 
+                                rel="noopener"
+                                aria-label="Follow us on Instagram"
+                            >
+                                <Instagram className="text-xl" aria-hidden="true" />
                             </a>
                         </div>
                     </div>

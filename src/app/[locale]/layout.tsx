@@ -5,7 +5,6 @@ import { routing } from "@/i18n/routing";
 import { generateMetadata as generateSiteMetadata, jsonLd } from "@/lib/metadata";
 import { Metadata } from "next";
 import Script from "next/script";
-import { notoSansArabic } from "@/lib/fonts";
 
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
     const { locale } = await params;
@@ -21,15 +20,31 @@ export default async function LocaleLayout({ children, params }: { children: Rea
     const messages = await getMessages();
 
     return (
-        <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"} >
-            <head>
-                <Script id="json-ld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-            </head>
-            <body className={notoSansArabic.variable} suppressHydrationWarning>
+        <>
+            <Script id="json-ld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+            <div 
+                dir={locale === "ar" ? "rtl" : "ltr"}
+                role="region"
+                aria-label="Content"
+                className="min-h-screen"
+            >
                 <NextIntlClientProvider messages={messages} locale={locale}>
-                    <div dir={locale === "ar" ? "rtl" : "ltr"}>{children}</div>
+                    <a 
+                        href="#main-content" 
+                        className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-white focus:text-black focus:outline-2 focus:outline-offset-2"
+                        aria-label="Skip to main content"
+                    >
+                        Skip to main content
+                    </a>
+                    <main 
+                        id="main-content" 
+                        tabIndex={-1}
+                        className="focus:outline-none"
+                    >
+                        {children}
+                    </main>
                 </NextIntlClientProvider>
-            </body>
-        </html>
+            </div>
+        </>
     );
 }
