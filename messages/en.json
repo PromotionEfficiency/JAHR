@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "main": "Home",
+    "services": "Services",
+    "contact": "Contact",
+    "about": "About"
+  },
+  "hero": {
+    "title": "Let Everyone Know",
+    "description": "Because your story deserves to be told, we help you in the process of thoughtful expansion, to move with steady steps",
+    "cta": "Our Services"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Jahr is a Saudi company providing specialized services in marketing and business services, aiming to bridge the gap in the local market. Additionally, Jahr contributes through after-sales services to implement strategies on the ground."
+  },
+  "services": {
+    "title": "Our Services",
+    "items": [
+      {
+        "title": "Marketing Strategies",
+        "description": "This service includes identifying partners' medium and long-term goals, establishing internal and external work methodologies, contributing to product planning, implementation, and tracking strategy execution progress.",
+        "icon": "LightbulbIcon"
+      },
+      {
+        "title": "Brand Strategies",
+        "description": "In this service, we prepare long-term plans to achieve a series of strategic objectives that ultimately lead to defining your brand in the target consumer space.",
+        "icon": "Paintbrush"
+      },
+      {
+        "title": "Intellectual Property Management",
+        "description": "We develop comprehensive strategies for managing intangible assets for companies and individuals, including but not limited to: company names, logos, trademark protection, and marketing management.",
+        "icon": "PenLine"
+      },
+      {
+        "title": "Third-Party Marketing",
+        "description": "This service aims to provide marketing/sales operations management services on behalf of clients to stimulate sales for beneficiary establishments, with our professional team delivering these specialized services.",
+        "icon": "Share2"
+      },
+      {
+        "title": "Relationship Management",
+        "description": "Through this service, we provide key account management services for entities lacking customer success and sales teams, as well as consulting services for establishing, managing, and measuring the performance of these teams.",
+        "icon": "Megaphone"
+      },
+      {
+        "title": "Public Relations",
+        "description": "In this service, a specialized team manages the organization's public image, reputation, and communication with media and other entities, as PR management is a strategic communication process crucial for maintaining brand image.",
+        "icon": "Laptop"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "email": "Email",
+    "phone": "Phone",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "submit": "Send"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  }
+} 
