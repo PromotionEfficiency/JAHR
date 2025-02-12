@@ -6,7 +6,11 @@ import { generateMetadata as generateSiteMetadata, jsonLd } from "@/lib/metadata
 import { Metadata } from "next";
 import Script from "next/script";
 
-export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+interface LocaleLayoutProps {
+    params: { locale: string };
+}
+
+export async function generateMetadata({ params }: LocaleLayoutProps ): Promise<Metadata> {
     const { locale } = await params;
     return generateSiteMetadata({ locale: locale });
 }
