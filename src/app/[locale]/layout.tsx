@@ -6,18 +6,27 @@ import { generateMetadata as generateSiteMetadata, jsonLd } from "@/lib/metadata
 import { Metadata } from "next";
 import Script from "next/script";
 
-interface LocaleLayoutProps {
+type LocaleLayoutProps = {
     children: React.ReactNode;
-    params: { locale: string };
+    params: {
+        locale: string;
+    };
+};
+
+export async function generateMetadata({ 
+    params 
+}: { 
+    params: { locale: string } 
+}): Promise<Metadata> {
+    const { locale } = params;
+    return generateSiteMetadata({ locale });
 }
 
-export async function generateMetadata({ params }: LocaleLayoutProps ): Promise<Metadata> {
-    const { locale } = await params;
-    return generateSiteMetadata({ locale: locale });
-}
-
-export default async function LocaleLayout({ children, params }: LocaleLayoutProps) {
-    const { locale } = await params;
+export default async function LocaleLayout({ 
+    children, 
+    params 
+}: LocaleLayoutProps) {
+    const { locale } = params;
 
     if (!routing.locales.includes(locale as any)) notFound();
 
