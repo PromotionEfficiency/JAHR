@@ -36,8 +36,8 @@ export default function Services() {
     const services = t.raw("services.items") as ServiceItem[];
 
     return (
-        <section id="services" className="relative py-20 bg-jbrown-400 dark:bg-jgreen-600 px-2 lg:px-0">
-            <Image src={Pattern} alt="pattern"  className="absolute inset-0 h-full w-full top-10 left-10 right-10 bottom-10 opacity-40" />
+        <section id="services" className="relative py-20 bg-jbrown-400 dark:bg-jgreen-600 px-2 lg:px-0 overflow-hidden">
+            <Image src={Pattern} alt="pattern" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[80%] w-[80%] opacity-40" />
             
             <div className="relative container mx-auto max-w-6xl">
                 <h2 className="text-4xl font-bold text-jbrown-900 dark:text-white mb-8 text-center ">{t("services.title")}</h2>
