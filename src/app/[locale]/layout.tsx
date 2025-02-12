@@ -9,9 +9,9 @@ import Script from "next/script";
 export async function generateMetadata({ 
     params 
 }: { 
-    params: { locale: string } 
+    params: Promise<{ locale: string }> 
 }): Promise<Metadata> {
-    const { locale } = params;
+    const { locale } = await params;
     return generateSiteMetadata({ locale });
 }
 
@@ -20,7 +20,7 @@ export default async function LocaleLayout({
     params,
 }: {
     children: React.ReactNode;
-    params: Promise<{ locale: string }> | { locale: string };
+    params: Promise<{ locale: string }>;
 }) {
     const { locale } = await params;
 
