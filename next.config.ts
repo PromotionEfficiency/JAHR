@@ -4,7 +4,7 @@ const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
     output: 'export',
-    basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
+    basePath: '/',
     images: {
         unoptimized: true,
     }
