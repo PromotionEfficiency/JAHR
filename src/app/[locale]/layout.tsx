@@ -7,6 +7,7 @@ import { Metadata } from "next";
 import Script from "next/script";
 
 interface LocaleLayoutProps {
+    children: React.ReactNode;
     params: { locale: string };
 }
 
@@ -15,7 +16,7 @@ export async function generateMetadata({ params }: LocaleLayoutProps ): Promise<
     return generateSiteMetadata({ locale: locale });
 }
 
-export default async function LocaleLayout({ children, params }: { children: React.ReactNode; params: { locale: string } }) {
+export default async function LocaleLayout({ children, params }: LocaleLayoutProps) {
     const { locale } = await params;
 
     if (!routing.locales.includes(locale as any)) notFound();
